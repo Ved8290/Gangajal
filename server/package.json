@@ -5,6 +5,10 @@
   "engines": {
     "node": "20.x"
   },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8e9f1fd1c14f30c6b36235d598888c40352dea80
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

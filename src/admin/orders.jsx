@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Admin.css';
+const dom='https://gangajal.vercel.app/';
 
 const AdminDashboard = () => {
   const [orders, setOrders] = useState([]);
@@ -8,7 +9,7 @@ const AdminDashboard = () => {
 
   // Fetch orders from backend API
   useEffect(() => {
-    fetch('http://localhost:5000/api/orders')
+    fetch(`${dom}/api/orders`)
       .then((response) => response.json())
       .then((data) => setOrders(data))
       .catch((error) => console.error('Error fetching orders:', error));
@@ -33,7 +34,7 @@ const AdminDashboard = () => {
     }
 
     // Send request to update payment status for selected orders
-    fetch('http://localhost:5000/api/orders/payment-status', {
+    fetch(`${dom}/api/orders/payment-status`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -57,7 +58,7 @@ const AdminDashboard = () => {
   // Handle PDF download for selected orders
   const handleDownloadPDF = () => {
     if (selectedOrders.length > 0) {
-      fetch('http://localhost:5000/generate-pdf', {
+      fetch(`${dom}/generate-pdf`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
