@@ -58,7 +58,7 @@ const Payment = () => {
       formData.append('screenshot', selectedFile);
 
       // Send the order data and file to the backend
-      const response = await fetch(`dom/Payment`, {
+      const response = await fetch(`$${dom}/Payment`, {
         method: 'POST',
         body: formData,
       });
