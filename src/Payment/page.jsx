@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 //import './Payment.css';
+const dom='https://gangajal.vercel.app/';
 
 const Payment = () => {
   const location = useLocation();
@@ -57,7 +58,7 @@ const Payment = () => {
       formData.append('screenshot', selectedFile);
 
       // Send the order data and file to the backend
-      const response = await fetch('http://localhost:5000/Payment', {
+      const response = await fetch(`dom/Payment`, {
         method: 'POST',
         body: formData,
       });
