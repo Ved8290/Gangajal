@@ -1,0 +1,327 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  animation: fadeIn 2s ease-out;
+}
+
+h2, h3, h4 {
+  font-family: 'Helvetica', sans-serif;
+  color: #333;
+}
+
+/* Fade-in animation for the entire page */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background-image: url('https://kashipriya.com/wp-content/uploads/2023/12/Understanding-Gangajal-Purification-Benefits-and-Drinking-Safety-Explained-Kashipriya-1-768x432.png');
+  background-size: cover;
+  background-position: center;
+  height: 80vh;
+  text-align: center;
+  animation: slideIn 2s ease-out;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for readability */
+}
+
+.hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  z-index: 1;
+}
+
+footer  p{
+  color: white;
+}
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  animation: fadeUp 2s ease-out;
+}
+
+.hero-content p{
+  color: white;
+  font-weight: 800;
+}
+
+.hero-content p {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeUp 2s ease-out 0.5s;
+}
+
+.cta-btn {
+  background-color: #ff9900; /* Saffron color */
+  padding: 12px 30px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #e68a00;
+}
+
+/* Keyframes for fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for slide-in animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Features Section */
+.features-section {
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeUp 2s ease-out;
+}
+
+.features-section h2 {
+  font-size: 36px;
+  color: #ff9900;
+  margin-bottom: 30px;
+}
+
+.features-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 2s ease-out;
+}
+
+.feature img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.feature h3 {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+/* Why Choose Us Section */
+.why-choose-us-section {
+  background-color: #fffbf2;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeUp 2s ease-out;
+}
+
+.why-choose-us-section h2 {
+  font-size: 36px;
+  color: #ff9900;
+  margin-bottom: 30px;
+}
+
+.why-choose-us-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.reason {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 2s ease-out;
+}
+
+.reason h3 {
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+/* Pricing Section */
+.pricing-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  animation: fadeUp 2s ease-out;
+}
+
+.pricing-section h2 {
+  font-size: 36px;
+  color: #ff9900;
+  margin-bottom: 30px;
+}
+
+.pricing-details {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-details p {
+  font-size: 24px;
+  color: #333;
+}
+
+.pricing-details .price {
+  font-size: 36px;
+  color: #ff9900;
+  font-weight: bold;
+}
+
+.pricing-details .original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 18px;
+}
+
+.pricing-details .gst {
+  font-size: 14px;
+  color: #666;
+}
+
+.delivery-info {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeUp 2s ease-out;
+}
+
+.faq-section h2 {
+  font-size: 36px;
+  color: #ff9900;
+  margin-bottom: 30px;
+}
+
+.faq-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.faq-item {
+  width: 30%;
+  margin-bottom: 20px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 2s ease-out;
+}
+
+/* Footer Section */
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+  }
+
+  .cta-btn {
+    font-size: 18px;
+  }
+
+  .features-list, .why-choose-us-list, .faq-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature, .reason, .faq-item {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 24px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .cta-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .features-list, .why-choose-us-list, .faq-list {
+    flex-direction: column;
+  }
+
+  .feature, .reason, .faq-item {
+    width: 90%;
+  }
+}

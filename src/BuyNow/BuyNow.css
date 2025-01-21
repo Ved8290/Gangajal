@@ -1,0 +1,132 @@
+/* BuyNow.css */
+
+/* Body Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff3e0;
+    justify-content: center;
+  }
+  
+  .language-toggle-btn{
+    border-color: #e66b00;
+    margin: 7px;
+  }
+  /* Full Screen Container */
+  .buy-now-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height */
+    width: 100%;
+    padding: 20px;
+    background: url('https://kashipriya.com/wp-content/uploads/2023/12/Understanding-Gangajal-Purification-Benefits-and-Drinking-Safety-Explained-Kashipriya-1-768x432.png') no-repeat center center/cover;
+    background-color: rgba(255, 255, 255, 0.8); /* Slight transparency for background */
+  }
+  
+  /* Container for the Form */
+  .buy-now-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px; /* Form will not exceed this width */
+    padding: 30px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Optional: Add slight blur effect on the background */
+  }
+  
+  /* Heading Styles */
+  h1 {
+    font-size: 2.5rem;
+    color: #ff7f00;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  /* Form Styles */
+  .order-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #444;
+  }
+  
+  .form-input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    outline: none;
+    width: 100%;
+    transition: border 0.3s ease;
+  }
+  
+  .form-input:focus {
+    border-color: #ff7f00;
+  }
+  
+  /* Error message */
+  .error {
+    color: red;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  /* Submit Button */
+  .cta-btn {
+    background-color: #ff7f00;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e66b00;
+  }
+  
+  /* Price Details */
+  .price-details {
+    background-color: #fffcf1;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .price-details h2 {
+    font-size: 1.5rem;
+    color: #ff7f00;
+    margin-top: 10px;
+  }
+  
+  .price-details p {
+    font-size: 1.1rem;
+    color: #444;
+    margin: 5px 0;
+  }
+  
